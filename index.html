@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atelier Lumière</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #f7f1ea;
+    --blush: #e8cfc4;
+    --rose: #c98f87;
+    --sage: #a8b09a;
+    --ink: #3b3330;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 6vw;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+  nav a { color: var(--ink); text-decoration: none; margin-left: 20px; }
+  .hero {
+    text-align: center;
+    padding: 14vh 6vw 12vh;
+    background: linear-gradient(180deg, var(--blush) 0%, var(--cream) 100%);
+  }
+  .hero p.small {
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    margin-bottom: 24px;
+  }
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(2.8rem, 10vw, 6rem);
+    line-height: 1.05;
+  }
+  .hero h1 em { color: var(--rose); }
+  .hero p.lead {
+    max-width: 480
