@@ -50,4 +50,120 @@
   }
   .hero h1 em { color: var(--rose); }
   .hero p.lead {
-    max-width: 480
+    max-width: 480px;
+    margin: 28px auto 36px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 14px 36px;
+    border: 1px solid var(--ink);
+    color: var(--ink);
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    transition: all 0.4s;
+  }
+  .btn:hover { background: var(--ink); color: var(--cream); }
+  section { padding: 10vh 6vw; max-width: 1000px; margin: 0 auto; }
+  h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 28px;
+  }
+  .card {
+    padding: 44px 28px;
+    text-align: center;
+    background: #fff9f4;
+    border-radius: 200px 200px 6px 6px;
+    border: 1px solid var(--blush);
+  }
+  .card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  .quote {
+    text-align: center;
+    background: var(--sage);
+    color: var(--cream);
+    padding: 12vh 6vw;
+  }
+  .quote p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(1.6rem, 5vw, 2.6rem);
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  footer {
+    text-align: center;
+    padding: 8vh 6vw;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div>Atelier Lumière</div>
+  <div>
+    <a href="#classes">Classes</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <p class="small">Pilates &amp; Movement Studio</p>
+  <h1>Move softly,<br><em>live in light</em></h1>
+  <p class="lead">A quiet space where strength meets grace. Slow, intentional movement inspired by the softness of romantic art.</p>
+  <a class="btn" href="#classes">Reserve a Class</a>
+</div>
+
+<section id="classes">
+  <h2>The Practice</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Reformer</h3>
+      <p>Sculpting, low-impact strength with flowing transitions.</p>
+    </div>
+    <div class="card">
+      <h3>Mat</h3>
+      <p>Core-centered work to lengthen, steady and restore.</p>
+    </div>
+    <div class="card">
+      <h3>Restore</h3>
+      <p>Gentle stretching and breath to close your week.</p>
+    </div>
+  </div>
+</section>
+
+<div class="quote">
+  <p>"Beauty is found in the stillness between movements."</p>
+</div>
+
+<section id="contact" style="text-align:center;">
+  <h2>Visit the Atelier</h2>
+  <p>Los Angeles, California</p>
+  <p>hello@atelierlumiere.com</p>
+  <br>
+  <a class="btn" href="mailto:hello@atelierlumiere.com">Say Hello</a>
+</section>
+
+<footer>© 2026 Atelier Lumière</footer>
+
+</body>
+</html>
+
